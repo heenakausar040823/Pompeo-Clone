@@ -1,0 +1,121 @@
+.main3{
+    display: flex;
+    padding: 0px 0px 70px 0px;
+}
+.shp_bg{
+    margin-top: 100px;
+}
+.shp_cont{
+    margin: 150px 50px 0px 50px;
+    padding: 0px 0px 80px 0px;
+    text-align: justify;
+}
+.pro_heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pro_container{
+    font-family: Poppins, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+    gap: 2rem;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.pro_container .products{
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #ffffff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    outline: .1rem solid #D4AF37;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+    width: 18rem;
+}
+.pro_container .products:hover{
+    outline: .1rem solid #D4AF37;
+    outline-offset: 0;
+}
+.pro_container .products img{
+    height: 15rem;
+}
+.pro_container .products h3, .price{
+    font-size: 1rem;
+    color: #D4AF37;
+}
+.pro_preview{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.pro_preview .preview{
+    display: none;
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+    background: #ffffff;
+    position: relative;
+    width: 30rem;
+}
+.pro_preview .preview.active{
+    display: inline-block;
+}
+.pro_preview .preview img{
+    height: 15rem;
+}
+.pro_preview .preview .fa-times{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+.pro_preview .preview h3{
+    font-size: 1.5rem;
+    color: #D4AF37;
+    font-family: Poppins;
+}
+.pro_preview .preview .stars{
+    padding: .5rem 0;
+    color: #D4AF37;
+}
+.pro_preview .preview .stars i{
+    font-size: 1rem;
+}
+.pro_preview .preview p{
+    line-height: 1.5;
+    font-family: Poppins ;
+    font-size: 1rem;
+    color: #A91B0D;
+}
+.pro_preview .preview .price{
+    font-size: 2rem;
+    font-family: Poppins;
+    padding: .5rem 0;
+}
+.pro_preview .preview .button{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: .5rem;
+    border: none;
+    font-family: Poppins;
+    cursor: pointer;
+    justify-content: center;
+}
+.pro_preview .preview .button a{
+    background-color: #A91B0D;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 20px 30px 20px 30px;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
